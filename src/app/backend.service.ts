@@ -5,11 +5,23 @@ import { HttpClient } from "@angular/common/http";
 })
 export class BackendService {
 
-  url="/assets/HomePage/Carosel/carosel.json"
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getCarosel(){
-   return this.http.get(this.url)
+  getCarosel() {
+    return [
+      {
+        "id": 1,
+        "img": "assets/HomePage/Carosel/ganpati.png"
+      },
+      {
+        "id": 2,
+        "img": "assets/HomePage/Carosel/ganpati1.png"
+      },
+      {
+        "id": 2,
+        "img": "assets/HomePage/Carosel/ganpati2.png"
+      }
+    ]
   }
 }
