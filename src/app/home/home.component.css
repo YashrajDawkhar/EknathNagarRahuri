@@ -1,4 +1,8 @@
-nav{
-    background-color: #011049;
-    
+nav {
+  background-color: #011049;
+}
+
+.position1 {
+  height: 50vh;
+  background-color: #011049;
 }
