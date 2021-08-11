@@ -1,13 +1,26 @@
 <meta name="theme-color" content="#011049">
 <nav>
-    <span routerLink="/Home" routerLinkActive="active" >Home </span>
-    <span routerLink="/event" routerLinkActive="active" >Event</span>
+    <span routerLink="/Home" routerLinkActive="active">Home </span>
+    <span routerLink="/event" routerLinkActive="active">Event</span>
     <span routerLink="#" routerLinkActive="active">Arti </span>
     <span routerLink="#" routerLinkActive="active">Sponsorship</span>
 </nav>
 
 <div>
     <div class="position1">
-        
+        <div class="carosel">
+
+
+            <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                (slide)="onSlide($event)">
+                <ng-template ngbSlide *ngFor="let img of images; index as i">
+
+                    <div class="picsum-img-wrapper">
+                        <img [src]="img.img" alt="My image {{i + 1}} description">
+                    </div>
+
+                </ng-template>
+            </ngb-carousel>
+        </div>
     </div>
 </div>

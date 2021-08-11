@@ -2,7 +2,43 @@ nav {
   background-color: #011049;
 }
 
+.picsum-img-wrapper{
+  display: flex;
+  justify-content: center;
+}
 .position1 {
-  height: 50vh;
   background-color: #011049;
+}
+@media only screen and (min-width: 426px) {
+  .picsum-img-wrapper {
+    height: 420px;
+  }
+  .position1 {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .picsum-img-wrapper {
+    height: 225px;
+  }
+  .position1 {
+    height:145px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .picsum-img-wrapper {
+    height: 198px;
+    
+  }
+  .position1 {
+    height: 125px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .picsum-img-wrapper {
+    height: 171px;
+  }
+  .position1 {
+    height:120px;
+  }
 }
