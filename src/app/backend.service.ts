@@ -12,15 +12,15 @@ export class BackendService {
     return [
       {
         "id": 1,
-        "img": "assets/HomePage/Carosel/ganpati.png"
+        "img": "assets/HomePage/Carosel/ganpati.webp"
       },
       {
         "id": 2,
-        "img": "assets/HomePage/Carosel/ganpati1.png"
+        "img": "assets/HomePage/Carosel/ganpati1.webp"
       },
       {
         "id": 2,
-        "img": "assets/HomePage/Carosel/ganpati2.png"
+        "img": "assets/HomePage/Carosel/ganpati2.webp"
       }
     ]
   }
