@@ -8,6 +8,7 @@ p-card {
   justify-content: center;
   border: none;
   margin-top: 25px;
+  
 }
 
 :host ::ng-deep .p-card .p-card-content {
