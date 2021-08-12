@@ -11,7 +11,8 @@ import { ArtiComponent } from './arti.component';
   ],
   imports: [
     CommonModule,
-    ArtiRoutingModule
+    ArtiRoutingModule,
+    
   ]
 })
 export class ArtiModule { }

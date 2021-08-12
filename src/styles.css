@@ -13,6 +13,7 @@ nav{
     background-color: #011049;
     position: sticky;
     top: 0;
+    z-index:10;
   }
   nav::-webkit-scrollbar{
     width: 0px;
