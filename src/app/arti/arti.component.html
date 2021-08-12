@@ -1,1 +1,37 @@
-<p>arti works!</p>
+<meta name="theme-color" content="#520044">
+<nav>
+    <span routerLink="/Home" routerLinkActive="active">Home </span>
+    <span routerLink="/event" routerLinkActive="active">Event</span>
+    <span routerLink="/Arti" routerLinkActive="active">Arti </span>
+    <span routerLink="#" routerLinkActive="active">Donation</span>
+</nav>
+<div>
+    
+</div>
+    <div id="cardhideMobile">
+        <p-card class="card" pRipple class="purple" [header]="img.title |titlecase"
+            [style]="{'width':'95vw','margin-bottom': '2px'}" *ngFor="let img of artiPhoto" >
+
+            <ng-template pTemplate="header" styleClass="dark-panel">
+                <img alt="Card" [src]="img.img" >
+            </ng-template>
+
+
+        </p-card>
+    </div>
+    <div id="cardhideTab">
+        <p-card class="card" [header]="img.title |titlecase" [style]="{'width':'80vw','margin-bottom': '2em'}"
+            *ngFor="let img of artiPhoto">
+            <ng-template pTemplate="header">
+                <img alt="Card" [src]="img.img">
+            </ng-template>
+        </p-card>
+    </div>
+    <div id="cardhideDekstop">
+        <p-card class="card" [header]="img.title |titlecase" [style]="{'width':'50vw','margin-bottom': '2em'}"
+            *ngFor="let img of artiPhoto">
+            <ng-template pTemplate="header">
+                <img alt="Card" [src]="img.img">
+            </ng-template>
+        </p-card>
+    </div>

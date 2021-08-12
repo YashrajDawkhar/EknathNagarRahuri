@@ -1,0 +1,63 @@
+nav {
+  background-color: #520044;
+}
+
+p-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: none;
+  margin-top: 25px;
+}
+
+:host ::ng-deep .p-card .p-card-content {
+    padding: 0px !important;
+}
+:host ::ng-deep .p-card .p-card-title{
+    font-family: 'Mirza', cursive;
+    color:black;
+    margin-bottom: 0px;
+    user-select: none;
+    text-align: center;
+}
+:host ::ng-deep .p-ripple.purple .p-ink {
+    background: #ffbee433;
+}
+:host ::ng-deep .p-card .p-card-body {
+    padding:0;
+    padding-top:7px;
+    margin:0;
+}
+@media only screen and (min-width: 769px) {
+  #cardhideMobile {
+    display: none;
+  }
+  #cardhideTab {
+    display: none;
+  }
+  #cardhideDekstop {
+    display: block;
+  }
+}
+@media only screen and (max-width: 769px) {
+  #cardhideMobile {
+    display: none;
+  }
+  #cardhideTab {
+    display: block;
+  }
+  #cardhideDekstop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 426px) {
+  #cardhideMobile {
+    display: block;
+  }
+  #cardhideTab {
+    display: none;
+  }
+  #cardhideDekstop {
+    display: none;
+  }
+}
