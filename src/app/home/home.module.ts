@@ -10,16 +10,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { GameListComponent } from './game-list/game-list.component';
 
+import {TimelineModule} from 'primeng/timeline';
 @NgModule({
   declarations: [
     HomeComponent,
     TimeLineComponent,
     GameListComponent
+    
   
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule, FormsModule, NgbModule
+    HomeRoutingModule, FormsModule, NgbModule,TimelineModule
   ]
 })
 export class HomeModule { }

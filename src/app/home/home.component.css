@@ -79,8 +79,12 @@ nav {
 }
 
 .gameList{
-  height: fit-content;
-  background-color: rgb(255, 255, 255);
+  height:fit-content;
+  /* background-color: rgb(92, 8, 8); */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 :host ::ng-deep .carousel-indicators{
