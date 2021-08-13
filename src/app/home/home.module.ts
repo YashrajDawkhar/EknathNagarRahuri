@@ -7,10 +7,14 @@ import { HomeComponent } from './home.component';
 import { FormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TimeLineComponent } from './time-line/time-line.component';
+import { GameListComponent } from './game-list/game-list.component';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    TimeLineComponent,
+    GameListComponent
   
   ],
   imports: [

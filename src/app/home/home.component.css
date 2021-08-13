@@ -11,31 +11,29 @@ nav {
 }
 
 .name {
- 
   font-family: "Inknut Antiqua", serif;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   text-shadow: 0 0 black;
   background-color: #011049;
-  padding:16px 13px;
-  
-  
+  padding: 16px 13px;
 }
-.artiname{
-  height:50vh;
-  width:100%;
+.artiname {
+  height: fit-content;
+  width: 100%;
   color: white;
-  background-image: linear-gradient(to bottom, #011049, #041656, #081c63, #0d2271, #11287f, #32398e, #4a4b9e, #605eae, #8984c2, #b1abd7, #d8d4eb, #ffffff);
+  background-image:linear-gradient( to bottom, #011049, #041656, #081c63, #0d2271, #11287f, #32398e, #4a4b9e, #6b69b8, #9b99d9, white );
+  position: relative;
 }
 @media only screen and (min-width: 426px) {
   .picsum-img-wrapper {
     height: 420px;
   }
   .position1 {
-    height:426px;
+    height: 426px;
   }
-  .name{
-    margin-top:0;
+  .name {
+    margin-top: 0;
     font-size: 26px;
     font-weight: 800;
   }
@@ -47,8 +45,8 @@ nav {
   .position1 {
     height: 224px;
   }
-  .name{
-    margin-top:0px;
+  .name {
+    margin-top: 0px;
     font-size: 19px;
     font-weight: 700;
   }
@@ -60,10 +58,10 @@ nav {
   .position1 {
     height: 200px;
   }
-  .name{
-    margin:0px;
+  .name {
+    margin: 0px;
     font-size: 19px;
-  font-weight: 700;
+    font-weight: 700;
   }
 }
 @media only screen and (max-width: 321px) {
@@ -73,9 +71,18 @@ nav {
   .position1 {
     height: 169px;
   }
-  .name{
-    margin:0px;
+  .name {
+    margin: 0px;
     font-size: 16px;
-  font-weight: 600;
+    font-weight: 600;
   }
+}
+
+.gameList{
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+}
+
+:host ::ng-deep .carousel-indicators{
+  z-index:2 !important;
 }

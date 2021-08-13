@@ -21,8 +21,8 @@ export class HomeComponent implements OnInit {
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;
-  pauseOnHover = true;
-  pauseOnFocus = true;
+  pauseOnHover = false;
+  pauseOnFocus = false;
 
   @ViewChild('carousel', { static: true })
   carousel!: NgbCarousel;
