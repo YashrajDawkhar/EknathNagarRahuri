@@ -11,5 +11,8 @@ export class BackendService {
     return this.http.post(this.url,data)
   }
 
+  getArtiName(){
+    return this.http.get(this.url);
+  }
 
 }

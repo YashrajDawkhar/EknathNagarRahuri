@@ -62,7 +62,7 @@ body{margin-top:20px;}
 
 .timeline .event:before {
     left: -207px;
-    content: attr(data-date);
+    content: attr(data-before);
     text-align: right;
     font-weight: 100;
     font-size: 0.9em;
@@ -115,6 +115,7 @@ body{margin-top:20px;}
 }
 
 #artiTitle{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Cabin Sketch', cursive;
+    font-size:20px;
 }
 

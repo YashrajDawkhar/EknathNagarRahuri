@@ -1,4 +1,15 @@
-
+<div class="alert alert-success alert-dismissible fade show" role="alert" *ngIf="sucessMessage">
+    Data Have Been Added <strong>Sucessfully.</strong> 
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="errorMessage">
+    Something Went <strong>Wrong !!</strong> 
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 
 <form autocomplete="off" [formGroup]="artiNames" (ngSubmit)="artiDetails()">
     <p id="titleArti">
@@ -10,9 +21,11 @@
     </div>
 
     <div class="p-float-label bottomMargin">
-        <p-calendar  [showTime]="true" inputId="time"  id="float-input" dateFormat="dd.mm.yy" hourFormat="12" formControlName="Date" ></p-calendar>
+        <p-calendar  [showTime]="true" inputId="time" id="float-input" dateFormat="dd.mm.yy" hourFormat="12" formControlName="Date" ></p-calendar>
         <label for="float-input">Time</label>
     </div>
     <button pButton pRipple type="button" label="Submit" class="p-button-raised p-button-text" type="submit" [disabled]="artiNames.invalid"></button>
-    <button pButton pRipple type="button" label="reset" class="p-button-raised p-button-danger p-button-text" type="reset" style="float: right;"></button>
+    <button pButton pRipple type="button" label="reset" class="p-button-raised p-button-danger p-button-text" type="reset" style="margin-left:42px;"></button>
 </form>
+
+

@@ -10,9 +10,11 @@ import { BackendService } from '../backend.service';
 export class AartiNameComponent implements OnInit {
   
   constructor(private service:BackendService ) { }
-
+  
+  
   ngOnInit(): void {
     
+   
   }
 
   artiNames = new FormGroup({
@@ -20,14 +22,21 @@ export class AartiNameComponent implements OnInit {
     Date : new FormControl('',Validators.required)
   })
 
+  sucessMessage:boolean =false
+  errorMessage:boolean =false
   artiDetails(){
-    console.log(this.artiNames.value);
+
     this.service.postArtiName(this.artiNames.value).subscribe(data=>{
+      this.sucessMessage = true
       this.artiNames.reset()
     },error=>{
-      console.log(error);
-      
+      this.errorMessage = true
     })
+    this.sucessMessage =false
   }
   
+  
+
+
+
 }

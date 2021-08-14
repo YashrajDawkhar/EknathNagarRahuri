@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from 'src/app/dashboard/backend.service';
+
 
 @Component({
   selector: 'app-time-line',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeLineComponent implements OnInit {
 
-  constructor() { }
+  arrayName: any = [];
+  
+
+  constructor(private service: BackendService) {
+    this.service.getArtiName().subscribe((data) => {
+      console.log(data);
+      this.arrayName = data;
+    })
+    
+
+  }
 
   ngOnInit(): void {
+
+
   }
+
 
 }
