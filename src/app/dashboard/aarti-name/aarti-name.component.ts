@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl ,FormGroup ,Validators}from '@angular/forms'
+import { BackendService } from '../backend.service';
+
 @Component({
   selector: 'app-aarti-name',
   templateUrl: './aarti-name.component.html',
   styleUrls: ['./aarti-name.component.css']
 })
 export class AartiNameComponent implements OnInit {
-  date7: any;
-  constructor() { }
+  
+  constructor(private service:BackendService ) { }
 
   ngOnInit(): void {
     
@@ -20,7 +22,12 @@ export class AartiNameComponent implements OnInit {
 
   artiDetails(){
     console.log(this.artiNames.value);
-    
+    this.service.postArtiName(this.artiNames.value).subscribe(data=>{
+      this.artiNames.reset()
+    },error=>{
+      console.log(error);
+      
+    })
   }
   
 }
