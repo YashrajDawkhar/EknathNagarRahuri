@@ -9,10 +9,12 @@ import {InputTextModule} from 'primeng/inputtext';
 import {CalendarModule} from 'primeng/calendar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 @NgModule({
   declarations: [
     DashboardComponent,
-    AartiNameComponent
+    AartiNameComponent,
+    NavBarComponent
   ],
   imports: [
     CommonModule,

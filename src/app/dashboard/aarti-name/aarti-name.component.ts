@@ -33,9 +33,10 @@ export class AartiNameComponent implements OnInit {
       this.errorMessage = true
     })
     this.sucessMessage =false
+    this.errorMessage = false
   }
   
-  
+  artiNameData:any =[]
 
 
 
