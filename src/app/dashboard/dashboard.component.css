@@ -1,3 +1,23 @@
 nav {
-    background-color: #011049;
-  }
+  background-color: #012701;
+}
+
+.artiNameDashboard {
+  height: fit-content;
+  box-shadow: 0px 0px 10px rgb(235, 234, 234);
+  position: relative;
+  top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 18px;
+  padding:50px;
+  border-radius:8px;
+}
+
+
+@media screen and (min-width:769px){
+    .artiNameDashboard{
+        margin: 0px 22vw;
+    }
+}

@@ -1,1 +1,16 @@
-<p>aarti-name works!</p>
+<form autocomplete="off" [formGroup]="artiNames" (ngSubmit)="artiDetails()">
+    <p>
+        Enter Arti Member Details
+    </p>
+    <div class="p-float-label bottomMargin">
+        <input id="float-input" type="text" pInputText formControlName="Name" >
+        <label for="float-input">Aarti Member Name</label>
+    </div>
+
+    <div class="p-float-label bottomMargin">
+        <p-calendar  [showTime]="true" inputId="time"  id="float-input" dateFormat="dd.mm.yy" hourFormat="12" formControlName="Date" ></p-calendar>
+        <label for="float-input">Time</label>
+    </div>
+    <button pButton pRipple type="button" label="Submit" class="p-button-raised p-button-text" type="submit" [disabled]="artiNames.invalid"></button>
+    <button pButton pRipple type="button" label="reset" class="p-button-raised p-button-danger p-button-text" type="reset" style="float: right;"></button>
+</form>

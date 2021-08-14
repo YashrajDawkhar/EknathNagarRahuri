@@ -1,0 +1,10 @@
+p {
+  font-size: 1.2rem;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 19px;
+  color:rgb(2, 121, 12);
+}
+
+.bottomMargin{
+    margin-bottom:25px;
+}

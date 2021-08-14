@@ -5,7 +5,10 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { AartiNameComponent } from './aarti-name/aarti-name.component';
 
-
+import {InputTextModule} from 'primeng/inputtext';
+import {CalendarModule} from 'primeng/calendar';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {ButtonModule} from 'primeng/button';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -13,7 +16,13 @@ import { AartiNameComponent } from './aarti-name/aarti-name.component';
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    InputTextModule,
+    CalendarModule,
+    FormsModule,
+    ButtonModule,
+    ReactiveFormsModule
+
   ]
 })
 export class DashboardModule { }
