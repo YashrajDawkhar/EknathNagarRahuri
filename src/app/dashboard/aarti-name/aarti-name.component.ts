@@ -8,8 +8,13 @@ import { BackendService } from '../backend.service';
   styleUrls: ['./aarti-name.component.css']
 })
 export class AartiNameComponent implements OnInit {
-  
-  constructor(private service:BackendService ) { }
+  artiNameData:any =[]
+
+  constructor(private service:BackendService ) {
+    service.getArtiName().subscribe((data)=>{
+      this.artiNameData = data
+    })
+   }
   
   
   ngOnInit(): void {
@@ -24,11 +29,13 @@ export class AartiNameComponent implements OnInit {
 
   sucessMessage:boolean =false
   errorMessage:boolean =false
+  delMessage:boolean =false
   artiDetails(){
 
     this.service.postArtiName(this.artiNames.value).subscribe(data=>{
       this.sucessMessage = true
       this.artiNames.reset()
+      this.artiNameData.push(data)
     },error=>{
       this.errorMessage = true
     })
@@ -36,7 +43,17 @@ export class AartiNameComponent implements OnInit {
     this.errorMessage = false
   }
   
-  artiNameData:any =[]
+  delData(id:any ,data:any){
+    this.service.delArtiName(id).subscribe(()=>{
+      this.delMessage = true
+    })
+    this.delMessage =false
+
+    let index = this.artiNameData.indexOf(data);
+    this.artiNameData.splice(index,1)
+
+  }
+  
 
 
 

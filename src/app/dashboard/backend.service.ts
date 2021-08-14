@@ -15,4 +15,7 @@ export class BackendService {
     return this.http.get(this.url);
   }
 
+  delArtiName(id:any){
+    return this.http.delete(`${this.url}/${id}`);
+  }
 }
