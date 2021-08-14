@@ -6,8 +6,8 @@
 nav {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: nowrap;
-  justify-content: center;
   overflow: auto;
   background-color: #011049;
   position: sticky;
@@ -37,8 +37,11 @@ nav span.active {
   nav span {
     font-size: 1.3rem;
   }
-  nav span.active{
+  nav span.active {
     margin-top: 14px;
+  }
+  nav {
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 426px) {
@@ -57,14 +60,15 @@ nav span.active {
   }
 }
 
-body::-webkit-scrollbar {
-  width: 0.5em;
-  background-color: #ffffff;
-}
-body::-webkit-scrollbar-track  {
-  box-shadow: inset 0 0 6px rgba(0,  0,  0,  0.3);
-}
-body::-webkit-scrollbar-thumb{
-  border-radius:50px;
-  background-color:rgb(136, 136, 136);
-}
+
+  body::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #ffffff;
+  }
+  body::-webkit-scrollbar-track  {
+    box-shadow: inset 0 0 6px rgba(0,  0,  0,  0.3);
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgb(136, 136, 136);
+  }
