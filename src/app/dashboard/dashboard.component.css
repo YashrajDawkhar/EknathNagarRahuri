@@ -1,13 +1,17 @@
 span {
-  width: fit-content;
-  height: 100px;
+  width: 250px;
+  height: 110px;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(219, 219, 219, 0.993);
+  box-shadow: 0px 0px 8px rgb(219 219 219 / 99%);
+  background-color: rgb(214 214 214 / 13%);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 12px 4px 6px 4px;
+  margin: 14px 4px 22px 4px;
   border-radius: 16px;
+  font-family: Nunito;
+  user-select: none;
 }
 .elements {
   display: flex;
@@ -32,12 +36,17 @@ span {
 }
 
 span:hover {
-  box-shadow: 0px 0px 30px rgba(216, 213, 213, 0.993);
+  box-shadow: 0px 0px 20px rgba(216, 213, 213, 0.993);
 }
 
 .logoutbtn {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  padding: 20px 20px 0 0;
+  justify-content: center;
+  padding: 15px 0px 20px 0px;
+}
+
+.bgBody {
+  background-color: #380217;
+  height:100vh;
 }

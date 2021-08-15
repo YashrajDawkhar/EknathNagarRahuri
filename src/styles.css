@@ -13,6 +13,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+  user-select: none;
 }
 nav::-webkit-scrollbar {
   width: 0px;
