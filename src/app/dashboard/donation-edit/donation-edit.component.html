@@ -1,0 +1,65 @@
+<app-nav-bar></app-nav-bar>
+
+
+
+<div class="artiNameDashboard">
+    <div class="alert alert-success alert-dismissible fade show" role="alert" *ngIf="sucessMessage">
+        Data Have Been Added <strong>Sucessfully.</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    
+      <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="errorMessage">
+        Something Went <strong>Wrong !!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    
+      <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="delMessage">
+        Data Have Been <strong>Deleted !!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+   
+  
+    <form autocomplete="off" [formGroup]="donationNames" (ngSubmit)="donationDetails()">
+        <p id="titleArti">
+            Enter Donation Member Details
+        </p>
+
+        <div class="p-float-label ">
+            <input id="float-input" type="text" pInputText formControlName="Name">
+            <label for="float-input">Name</label>
+        </div>
+        <div class="p-field bottomMargin">
+            <label for="inputnumber" style="font-size:13px;color:rgb(105, 103, 103);padding-left:2px;">Amount Rs</label>
+            <span class="p-float-label">
+                <p-inputNumber  inputId="inputnumber" formControlName="Amount" mode="currency" currency="INR" locale="en-IN"></p-inputNumber>
+            </span>
+        </div>
+        <div class="p-float-label bottomMargin">
+            <p-calendar [showTime]="true" inputId="time" dateFormat="dd.mm.yy" hourFormat="12" formControlName="Date"
+                [readonlyInput]="true" placeholder="Date And Time"></p-calendar>
+        </div>
+        <div class="p-float-label bottomMargin">
+            <input id="float-input" type="text" pInputText formControlName="Person">
+            <label for="float-input">Person Who Took Money</label>
+        </div>
+        <button pButton pRipple type="button" label="Submit" class="p-button-raised p-button-text" type="submit"
+            [disabled]="donationNames.invalid" style="color:rgb(207, 0, 52);"></button>
+
+        <button pButton pRipple type="button" label="reset"
+            class="p-button-raised p-button-danger p-button-text resetbtn" type="reset"></button>
+
+    </form>
+  
+  
+  
+  
+  
+  
+  </div>
+  

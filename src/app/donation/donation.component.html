@@ -1,9 +1,39 @@
 <meta name="theme-color" content="#05404e">
 <nav>
-    <span routerLink="/Home" routerLinkActive="active" >Home </span>
-    <span routerLink="/event" routerLinkActive="active" >Event</span>
+    <span routerLink="/Home" routerLinkActive="active">Home </span>
+    <span routerLink="/event" routerLinkActive="active">Event</span>
     <span routerLink="/Arti" routerLinkActive="active">Arti </span>
     <span routerLink="/donation" routerLinkActive="active">Donation</span>
     <span routerLink="/login" routerLinkActive="active" *ngIf="Notlogin">Login</span>
     <span routerLink="/dashboard" routerLinkActive="active" *ngIf="login">Dashboard</span>
 </nav>
+
+<div class="tableData">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Amount</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of donation; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>
+                    {{ data.Name}}
+                </td>
+                <td>
+                    {{ data.Amount}} Rs
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>

@@ -10,11 +10,16 @@ import {CalendarModule} from 'primeng/calendar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {ButtonModule} from 'primeng/button';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { DonationComponent } from './donation/donation.component';
+import {InputNumberModule} from 'primeng/inputnumber';
+import { DonationEditComponent } from './donation-edit/donation-edit.component';
 @NgModule({
   declarations: [
     DashboardComponent,
     AartiNameComponent,
-    NavBarComponent
+    NavBarComponent,
+    DonationComponent,
+    DonationEditComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +28,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     CalendarModule,
     FormsModule,
     ButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InputNumberModule
 
   ]
 })
