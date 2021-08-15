@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import {LoginGuardGuard}from './login-guard.guard'
 const routes: Routes = [
   {
     path: '',
@@ -18,7 +18,8 @@ const routes: Routes = [
   },
   { path: 'Arti', loadChildren: () => import('./arti/arti.module').then(m => m.ArtiModule) },
   { path: 'donation', loadChildren: () => import('./donation/donation.module').then(m => m.DonationModule) },
-  { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
+  { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) ,canActivate:[LoginGuardGuard] },
+  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
 ];
 
 @NgModule({
