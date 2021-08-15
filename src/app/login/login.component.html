@@ -1,1 +1,43 @@
-<p>login works!</p>
+<meta name="theme-color" content="#5f0037">
+<nav>
+    <span routerLink="/Home" routerLinkActive="active">Home </span>
+    <span routerLink="/event" routerLinkActive="active">Event</span>
+    <span routerLink="/Arti" routerLinkActive="active">Arti </span>
+    <span routerLink="/donation" routerLinkActive="active">Donation</span>
+    <span routerLink="/login" routerLinkActive="active">Login</span>
+</nav>
+
+<div class="loginclass">
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="alert">
+         <strong>Invalid credentials !</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+    <form autocomplete="off" [formGroup]="loginInfo" (ngSubmit)="LoginDetails(loginInfo.value)">
+        <p id="titlelogin">
+            Enter Login Details
+        </p>
+
+        <div class="p-float-label bottomMargin">
+            <input id="float-input" type="text" pInputText formControlName="Name">
+            <label for="float-input">Name</label>
+        </div>
+        <span class="p-float-label">
+            <p-password inputId="password" formControlName="Password"></p-password>
+            <label for="password">Password</label>
+        </span>
+
+        <span class="btnclass">
+            <button pButton pRipple type="button" label="Login" class="p-button-raised p-button-text p-button-help"
+                type="submit" [disabled]="loginInfo.invalid"></button>
+        </span>
+
+
+        <p class="team">* Only for eknathnagar team members </p>
+
+    </form>
+
+</div>

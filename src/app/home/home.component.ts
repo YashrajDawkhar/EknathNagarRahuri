@@ -8,8 +8,15 @@ import { BackendService } from '../backend.service';
 })
 export class HomeComponent implements OnInit {
   images:any= []
+
+  Notlogin:boolean=true
+  login:boolean=false
+
   constructor(private service:BackendService) { 
-    
+    if(localStorage.getItem("UserName") && localStorage.getItem('Password')){
+      this.Notlogin=false
+      this.login=true
+    }
   }
 
   ngOnInit(): void {
@@ -45,4 +52,8 @@ export class HomeComponent implements OnInit {
       this.togglePaused();
     }
   }
+
+  
+  
+
 }

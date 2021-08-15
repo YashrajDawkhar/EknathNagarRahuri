@@ -1,1 +1,9 @@
-<p>donation works!</p>
+<meta name="theme-color" content="#05404e">
+<nav>
+    <span routerLink="/Home" routerLinkActive="active" >Home </span>
+    <span routerLink="/event" routerLinkActive="active" >Event</span>
+    <span routerLink="/Arti" routerLinkActive="active">Arti </span>
+    <span routerLink="/donation" routerLinkActive="active">Donation</span>
+    <span routerLink="/login" routerLinkActive="active" *ngIf="Notlogin">Login</span>
+    <span routerLink="/dashboard" routerLinkActive="active" *ngIf="login">Dashboard</span>
+</nav>

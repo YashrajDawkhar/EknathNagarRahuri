@@ -6,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./event.component.css']
 })
 export class EventComponent implements OnInit {
+  Notlogin:boolean=true
+  login:boolean=false
 
-  constructor() { }
+  constructor() {
+    if(localStorage.getItem("UserName") && localStorage.getItem('Password')){
+      this.Notlogin=false
+      this.login=true
+    }
+   }
 
   ngOnInit(): void {
   }

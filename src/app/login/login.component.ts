@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  loginList = [{ name: "Yashraj Dawkhar", pass: "Yashraj@19" },
+   { name: "Tejas Dawkhar", pass: "Tejas@67" },{name:"Ganpati",pass:"Ganpati@12"},{name:"Piyush Marbhal",pass:"Piyush@55"}]
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+
+  loginInfo = new FormGroup({
+    Name: new FormControl('', Validators.required),
+    Password: new FormControl('', Validators.required)
+  })
+
+
+  alert: boolean = false
+
+  LoginDetails(data: any) {
+
+    let userName = data.Name.trim()
+    let pass = data.Password.trim()
+
+    for (let i in this.loginList) {
+      if (userName === this.loginList[i].name && pass === this.loginList[i].pass) {
+
+        localStorage.setItem("UserName", userName)
+        localStorage.setItem("Password", pass)
+        this.router.navigateByUrl('/dashboard')
+      }
+    }
+    this.alert = true
+    this.loginInfo.reset()
+
   }
 
 }

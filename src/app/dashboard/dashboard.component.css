@@ -1,37 +1,43 @@
-span{
-  width:fit-content;
-  height:100px;
-  padding:20px;
-  box-shadow:0px 0px 10px rgba(219, 219, 219, 0.993);
+span {
+  width: fit-content;
+  height: 100px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(219, 219, 219, 0.993);
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   margin: 12px 4px 6px 4px;
-  border-radius:16px;
+  border-radius: 16px;
 }
-.elements{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.elements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-@media screen and (min-width:1020px) {
-  .elements{
+@media screen and (min-width: 1020px) {
+  .elements {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-
   }
-  span{
-    height:200px ;
-    width:150px;
-    margin:30px;
+  span {
+    height: 200px;
+    width: 150px;
+    margin: 30px;
   }
 }
 
-span:hover{
-  box-shadow:0px 0px 30px rgba(216, 213, 213, 0.993);
+span:hover {
+  box-shadow: 0px 0px 30px rgba(216, 213, 213, 0.993);
+}
+
+.logoutbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 20px 0 0;
 }

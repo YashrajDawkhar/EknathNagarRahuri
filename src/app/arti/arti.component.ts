@@ -9,8 +9,16 @@ export class ArtiComponent implements OnInit {
 
   artiPhoto:any =[]
 
+  Notlogin:boolean=true
+  login:boolean=false
+
   constructor(private service:BackendService) { 
     this.artiPhoto =service.getArtiPhoto();
+    
+    if(localStorage.getItem("UserName") && localStorage.getItem('Password')){
+      this.Notlogin=false
+      this.login=true
+    }
   }
 
   ngOnInit(): void {
