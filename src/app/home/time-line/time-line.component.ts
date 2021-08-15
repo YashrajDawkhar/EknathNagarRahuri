@@ -14,7 +14,6 @@ export class TimeLineComponent implements OnInit {
 
   constructor(private service: BackendService) {
     this.service.getArtiName().subscribe((data) => {
-      console.log(data);
       this.arrayName = data;
     })
     

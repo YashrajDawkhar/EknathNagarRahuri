@@ -4,7 +4,8 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class BackendService {
-  url = "http://localhost:3000/artiName"
+  // url = "http://localhost:3000/artiName"
+  url ="https://eknathnagar.herokuapp.com/artiName"
   constructor(private http:HttpClient) { }
 
   postArtiName(data:any){

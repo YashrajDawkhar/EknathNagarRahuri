@@ -27,15 +27,20 @@ export class AartiNameComponent implements OnInit {
     Date : new FormControl('',Validators.required)
   })
 
+
+
   sucessMessage:boolean =false
   errorMessage:boolean =false
   delMessage:boolean =false
   artiDetails(){
-
-    this.service.postArtiName(this.artiNames.value).subscribe(data=>{
+    
+    this.service.postArtiName(this.artiNames.value).subscribe((data:any)=>{
+      this.artiNameData.push(this.artiNames.value)
       this.sucessMessage = true
+      this.delMessage =false
       this.artiNames.reset()
-      this.artiNameData.push(data)
+      
+
     },error=>{
       this.errorMessage = true
     })
@@ -46,6 +51,7 @@ export class AartiNameComponent implements OnInit {
   delData(id:any ,data:any){
     this.service.delArtiName(id).subscribe(()=>{
       this.delMessage = true
+      this.sucessMessage =false
     })
     this.delMessage =false
 
