@@ -17,17 +17,10 @@
         </button>
       </div>
     
-      <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="delMessage">
-        Data Have Been <strong>Deleted !!</strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-   
   
     <form autocomplete="off" [formGroup]="donationNames" (ngSubmit)="donationDetails()">
         <p id="titleArti">
-            Enter Donation Member Details
+            Edit Donation Member Details
         </p>
 
         <div class="p-float-label ">

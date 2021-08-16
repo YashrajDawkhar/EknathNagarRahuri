@@ -42,7 +42,7 @@ export class BackendService {
   }
 
   putDonationByID(id:number,data:any){
-    return this.http.put(`${this.urlDonation}/${id}`,data)
+    return this.http.patch(`${this.urlDonation}/${id}`,data)
   }
 
 

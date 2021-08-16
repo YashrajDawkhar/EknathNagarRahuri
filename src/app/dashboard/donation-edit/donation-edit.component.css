@@ -17,3 +17,15 @@
       }
       
   }
+  .bottomMargin{
+    margin-bottom:25px;
+}
+.resetbtn{
+    float: right;
+   }
+   #titleArti{
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 19px;
+    color:rgb(145, 1, 37);
+  }

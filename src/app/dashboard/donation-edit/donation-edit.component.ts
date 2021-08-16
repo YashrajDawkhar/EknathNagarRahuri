@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms'
+import { ActivatedRoute, Router } from '@angular/router';
 import { BackendService } from '../backend.service';
 
 @Component({
@@ -8,11 +9,22 @@ import { BackendService } from '../backend.service';
   styleUrls: ['./donation-edit.component.css']
 })
 export class DonationEditComponent implements OnInit {
-  donationData: any = []
   
-  constructor(private service: BackendService) {
-    
-   }
+
+  id = this.router.snapshot.params.id
+
+  constructor(private service: BackendService, private router: ActivatedRoute ,private routerlink :Router) {
+
+    service.getDonationByID(this.id).subscribe((data: any) => {
+      this.donationNames = new FormGroup({
+        Name: new FormControl(data.Name),
+        Date: new FormControl('',Validators.required),
+        Person: new FormControl(data.Person),
+        Amount: new FormControl(data.Amount)
+      })
+    })
+
+  }
 
   ngOnInit(): void {
   }
@@ -27,23 +39,22 @@ export class DonationEditComponent implements OnInit {
 
   sucessMessage: boolean = false
   errorMessage: boolean = false
-  delMessage: boolean = false
+  
 
 
   donationDetails() {
 
-    this.service.postDonation(this.donationNames.value).subscribe((data: any) => {
-      this.donationData.push(this.donationNames.value)
+    this.service.putDonationByID(this.id,this.donationNames.value).subscribe(()=>{
       this.sucessMessage = true
-      this.delMessage = false
       this.donationNames.reset()
-
-
-    }, (error) => {
-      this.errorMessage = true
+      this.routerlink.navigateByUrl('/dashboard/donation')
+    },()=>{
+      this.errorMessage=true
     })
-    this.sucessMessage = false
-    this.errorMessage = false
+      
+      
+
+  
   }
 
 }
