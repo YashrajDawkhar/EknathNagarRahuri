@@ -13,13 +13,15 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DonationComponent } from './donation/donation.component';
 import {InputNumberModule} from 'primeng/inputnumber';
 import { DonationEditComponent } from './donation-edit/donation-edit.component';
+import { EventUpdatesComponent } from './event-updates/event-updates.component';
 @NgModule({
   declarations: [
     DashboardComponent,
     AartiNameComponent,
     NavBarComponent,
     DonationComponent,
-    DonationEditComponent
+    DonationEditComponent,
+    EventUpdatesComponent
   ],
   imports: [
     CommonModule,
