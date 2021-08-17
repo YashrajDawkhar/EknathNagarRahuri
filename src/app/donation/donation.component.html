@@ -7,9 +7,11 @@
     <span routerLink="/login" routerLinkActive="active" *ngIf="Notlogin">Login</span>
     <span routerLink="/dashboard" routerLinkActive="active" *ngIf="login">Dashboard</span>
 </nav>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+<div class="title">List 2021</div>
 
 <div class="tableData">
-
+    
     <table class="table table-striped">
         <thead>
             <tr>
@@ -31,9 +33,17 @@
                 </td>
 
             </tr>
-
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                   <b>Total</b>
+                </td>
+                
+                <td>
+                   {{total}} Rs
+                </td>
+            </tr>
         </tbody>
-
+        
     </table>
 
 </div>

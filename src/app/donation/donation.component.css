@@ -4,9 +4,8 @@ nav{
 
 .tableData{
     position: relative;
-    top:50px;
     margin:0 10px;
-    box-shadow:0 0 10px rgb(199, 199, 199);
+    box-shadow:0 0 7px rgb(224, 223, 223);
   }
 
   @media screen and (min-width:769px){
@@ -14,4 +13,14 @@ nav{
     .tableData{
       margin: 0px 22vw;
     }
+}
+
+.title{
+  text-align: center;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #05404e;
+    
 }

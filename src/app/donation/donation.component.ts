@@ -12,7 +12,7 @@ export class DonationComponent implements OnInit {
   login:boolean=false
 
   donation:any=[]
-
+  total:number=0;
   constructor(private service:BackendService) {
     if(localStorage.getItem("UserName") && localStorage.getItem('Password')){
       this.Notlogin=false
@@ -21,8 +21,16 @@ export class DonationComponent implements OnInit {
 
     service.getDonation().subscribe((data)=>{
       this.donation =data
+
+      this.total=this.donation.reduce((x:any,y:any)=>{
+        return x + y.Amount
+      },0)
+
     })
 
+    
+    
+   
 
    }
 

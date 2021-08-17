@@ -17,10 +17,10 @@ export class DonationEditComponent implements OnInit {
 
     service.getDonationByID(this.id).subscribe((data: any) => {
       this.donationNames = new FormGroup({
-        Name: new FormControl(data.Name),
+        Name: new FormControl(data.Name,Validators.required),
         Date: new FormControl('',Validators.required),
-        Person: new FormControl(data.Person),
-        Amount: new FormControl(data.Amount)
+        Person: new FormControl(data.Person,Validators.required),
+        Amount: new FormControl(data.Amount,Validators.required)
       })
     })
 
