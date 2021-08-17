@@ -7,16 +7,36 @@ import { Component, OnInit } from '@angular/core';
   
 })
 export class GameListComponent implements OnInit {
-  events1:any= [];
+  events:any= [];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.events1 = [
-      {status: 'Sangit Khurchi', date: '15/10/2020 10:30', color: '#9C27B0', image: 'game-controller.jpg'},
-      {status: 'Rangoli', date: '15/10/2020 14:00', color: '#673AB7'},
-      {status: 'Drawing', date: '15/10/2020 16:15', color: '#FF9800'},
-      {status: 'Dance', date: '16/10/2020 10:00', color: '#607D8B'}
+    this.events = [
+      {Desc: 'Sangit Khurchi lorem30 ajdjkas sajkgsdfjga sfhui sdh f sdg fkjasjfkajk sf sdajfjsgdjfjksagjkf asdgfjks gfs f', Date: '15/10/2020 10:30'},
+      {Desc: 'Rangoli asdsafwesfec cdfusud wguis ', Date: '15/10/2020 14:00'},
+      {Desc: 'Drawing', Date: '15/10/2020 16:15'},
+      {Desc: 'Dance', Date: '16/10/2020 10:00'},
+      {Desc: 'Sangit Khurchi', Date: '15/10/2020 10:30'},
+      {Desc: 'Rangoli', Date: '15/10/2020 14:00'},
+      {Desc: 'Drawing', Date: '15/10/2020 16:15'},
+      {Desc: 'Dance', Date: '16/10/2020 10:00'},
+      {Desc: 'Sangit Khurchi', Date: '15/10/2020 10:30'},
+      {Desc: 'Rangoli', Date: '15/10/2020 14:00'},
+      {Desc: 'Drawing', Date: '15/10/2020 16:15'},
+      {Desc: 'Dance', Date: '16/10/2020 10:00'},
+      {Desc: 'Sangit Khurchi', Date: '15/10/2020 10:30'},
+      {Desc: 'Rangoli', Date: '15/10/2020 14:00'},
+      {Desc: 'Drawing', Date: '15/10/2020 16:15'},
+      {Desc: 'Dance', Date: '16/10/2020 10:00'},
+      {Desc: 'Sangit Khurchi', Date: '15/10/2020 10:30'},
+      {Desc: 'Rangoli', Date: '15/10/2020 14:00'},
+      {Desc: 'Drawing', Date: '15/10/2020 16:15'},
+      {Desc: 'Dance', Date: '16/10/2020 10:00'},
+      {Desc: 'Sangit Khurchi', Date: '15/10/2020 10:30'},
+      {Desc: 'Rangoli', Date: '15/10/2020 14:00'},
+      {Desc: 'Drawing', Date: '15/10/2020 16:15'},
+      {Desc: 'Yashraj Dawkhar', Date: '16/10/2020 10:00'},
   ];
   }
 
