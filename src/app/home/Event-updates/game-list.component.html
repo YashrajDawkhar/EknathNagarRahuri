@@ -7,7 +7,7 @@
 
   <div class="box">
 
-    <div class="container" *ngFor="let data of events">
+    <div class="container" *ngFor="let data of events" loading="lazy">
 
 
       <div class="lines">
@@ -18,13 +18,10 @@
       <div class="cards">
         <div class="card" >
 
-          <h4>{{data.Date}}</h4>
+          <h4>{{data.Date |date}}</h4>
           <p>{{data.Desc}}</p>
         </div>
       </div>
-
-
-
 
 
     </div>

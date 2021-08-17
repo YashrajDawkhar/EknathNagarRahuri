@@ -15,7 +15,7 @@
             [style]="{'width':'95vw','margin-bottom': '2px'}" *ngFor="let img of artiPhoto" >
 
             <ng-template pTemplate="header" styleClass="dark-panel">
-                <img alt="Card" [src]="img.img" >
+                <img alt="Card" [src]="img.img" loading="lazy">
             </ng-template>
 
 
@@ -25,7 +25,7 @@
         <p-card class="card" [header]="img.title |titlecase" [style]="{'width':'80vw','margin-bottom': '2em'}"
             *ngFor="let img of artiPhoto">
             <ng-template pTemplate="header">
-                <img alt="Card" [src]="img.img">
+                <img alt="Card" [src]="img.img" loading="lazy">
             </ng-template>
         </p-card>
     </div>
@@ -33,7 +33,7 @@
         <p-card class="card" [header]="img.title |titlecase" [style]="{'width':'50vw','margin-bottom': '2em'}"
             *ngFor="let img of artiPhoto">
             <ng-template pTemplate="header">
-                <img alt="Card" [src]="img.img">
+                <img alt="Card" [src]="img.img" loading="lazy">
             </ng-template>
         </p-card>
     </div>

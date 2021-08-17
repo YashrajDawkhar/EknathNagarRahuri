@@ -39,8 +39,12 @@ export class LoginComponent implements OnInit {
         this.router.navigateByUrl('/dashboard')
       }
     }
-    this.alert = true
-    this.loginInfo.reset()
+    
+    setTimeout(() => {
+      this.alert = true
+      this.loginInfo.reset()
+    },1000);
+    
 
   }
 

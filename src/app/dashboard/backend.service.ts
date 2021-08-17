@@ -45,6 +45,28 @@ export class BackendService {
     return this.http.patch(`${this.urlDonation}/${id}`,data)
   }
 
+  urlEventUpdate ="https://eknathnagar.herokuapp.com/eventupdate"
+
+  getEventUpdate(){
+    return this.http.get(this.urlEventUpdate);
+  }
+
+  postEventUpdate(data:any){
+    
+    return this.http.post(this.urlEventUpdate,data)
+  }
+
+  deleteEventUpdate(id:number){
+    return this.http.delete(`${this.urlEventUpdate}/${id}`)
+  }
+
+  getEventUpdateByID(id:number){
+    return this.http.get(`${this.urlEventUpdate}/${id}`)
+  }
+
+  putEventUpdateByID(id:number,data:any){
+    return this.http.patch(`${this.urlEventUpdate}/${id}`,data)
+  }
 
 
 }
