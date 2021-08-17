@@ -1,1 +1,95 @@
-<p>event-updates works!</p>
+<app-nav-bar></app-nav-bar>
+
+
+
+<div class="eventDashboard">
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert" *ngIf="sucessMessage">
+        Data Have Been Added <strong>Sucessfully.</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="errorMessage">
+        Something Went <strong>Wrong !!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="delMessage">
+        Data Have Been <strong>Deleted !!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+
+
+
+
+    <form autocomplete="off" [formGroup]="eventDetails" (ngSubmit)="artiDetails()">
+        <div class="topPart">
+            <p id="titleArti">
+                Enter Event Update Details
+            </p>
+
+            <div class="p-float-label bottomMargin">
+                <p-calendar [showTime]="true" inputId="time" dateFormat="dd.mm.yy" hourFormat="12"
+                    formControlName="Date" [readonlyInput]="true" placeholder="Date and Time" inputId="touchui">
+                </p-calendar>
+            </div>
+    
+            <span class="p-float-label bottomMargin">
+                <input type="text" id="inputtext" pInputText formControlName="Img" > 
+                <label for="inputtext" >Image Url</label>
+            </span>
+            
+        </div>
+        <p-editor [style]="{'height':'320px','margin-bottom':'20px'}" class="bottomMargin" formControlName="Desc">
+        </p-editor>
+
+        
+
+        <button pButton pRipple type="button" label="Submit" class="p-button-raised p-button-text buttonChanges"
+            type="submit" [disabled]="eventDetails.invalid"></button>
+
+        <button pButton pRipple type="button" label="reset"
+            class="p-button-raised p-button-danger p-button-text resetbtn buttonChanges" type="reset"></button>
+
+    </form>
+
+
+
+</div>
+
+
+<div class="tableData">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Desc</th>
+                <th scope="col">Image</th>
+                <th scope="col">Date</th>
+                <th scope="col">Delete</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of eventArray; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td [innerHTML]="data.Desc"></td>
+                <img [src]="data.Img" style="width:120px;height:120px;">
+                <td>{{ data.Date | date }} <br> {{ data.Date | date:'shortTime' }}</td>
+                <td style="color:red;" (click)="delData(data._id ,data)"><i class="bi bi-trash"></i></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>

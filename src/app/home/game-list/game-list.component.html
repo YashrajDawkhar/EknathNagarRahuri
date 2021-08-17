@@ -19,7 +19,8 @@
         <div class="card" >
 
           <h4>{{data.Date |date}}</h4>
-          <p>{{data.Desc}}</p>
+          <p [innerHTML]="data.Desc"></p>
+          <img [src]="data.Img" >
         </div>
       </div>
 

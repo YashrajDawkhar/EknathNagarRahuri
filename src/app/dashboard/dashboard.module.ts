@@ -14,6 +14,7 @@ import { DonationComponent } from './donation/donation.component';
 import {InputNumberModule} from 'primeng/inputnumber';
 import { DonationEditComponent } from './donation-edit/donation-edit.component';
 import { EventUpdatesComponent } from './event-updates/event-updates.component';
+import {EditorModule} from 'primeng/editor';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -31,7 +32,8 @@ import { EventUpdatesComponent } from './event-updates/event-updates.component';
     FormsModule,
     ButtonModule,
     ReactiveFormsModule,
-    InputNumberModule
+    InputNumberModule,
+    EditorModule
 
   ]
 })

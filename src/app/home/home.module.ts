@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TimeLineComponent } from './time-line/time-line.component';
-import { GameListComponent } from './Event-updates/game-list.component';
+import { GameListComponent } from './game-list/game-list.component';
 
 import {TimelineModule} from 'primeng/timeline';
 @NgModule({
