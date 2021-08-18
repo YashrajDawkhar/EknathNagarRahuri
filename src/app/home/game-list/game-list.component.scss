@@ -31,7 +31,7 @@ body {
   width: 310px;
   height: fit-content;
   // background: #ecf1f524;
-  background: #6f85961f;
+  background: #ffffff;
   mix-blend-mode: normal;
   backdrop-filter: blur(15px);
 
@@ -42,16 +42,19 @@ body {
   margin-bottom: 50px;
   box-shadow: 0px 20px 53px -30px rgba(84, 92, 182, 0.377);
   border-radius:17px;
-
+  border: 1px solid #0f0381;
   h3 {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 30px;
-    color: #ffffff;
-    margin-left: 66px;
-    margin-top: 40px;
+    color: #02006d;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
   }
 
   label {
@@ -71,7 +74,7 @@ body {
     width: 100%;
     height: 540px;
     background: #fbfcfd;
-    margin-top: 25px;
+   
     overflow: scroll;
 
     .container {
@@ -107,7 +110,6 @@ body {
           height: fit-content;
           padding-top: 25px;
           padding-bottom: 10px;
-          padding-right: 7px;
           background: #ffffff;
           box-shadow: 0 2px 2px 0 #eeeeee40;
           border-radius: 10px;
@@ -147,16 +149,16 @@ body {
 
     .bottom {
       width: 100%;
-      height: 89px;
+      height:70px;
       background: #fff;
       box-shadow: 0 0 2px #eeeeee50;
-      padding-top: 13px;
+      padding-top: 11px;
       position: fixed;
       bottom: 0;
 
       .btn {
-        width: 249px;
-        height: 62px;
+        width: 223px;
+    height: 48px;
         background: #ffffff40;
         mix-blend-mode: normal;
         cursor: pointer;
@@ -173,7 +175,7 @@ body {
         line-height: 19px;
         color: #2b2862;
 
-        margin-left: 32px;
+        margin-left:42px;
         transition: 0.3s;
         background: #2b2862;
         color: #fff;
@@ -190,4 +192,9 @@ body {
     width: 0px;
     height: 0px;
   }
+}
+
+
+#cardright{
+ margin-right: 7px;
 }

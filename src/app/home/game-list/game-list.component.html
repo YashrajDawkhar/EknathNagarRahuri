@@ -1,8 +1,8 @@
-<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
 
 <div class="timeline">
 
-  <h3 style="font-family: 'Macondo', cursive;font-size: 26px;">Event Updates</h3>
+  <h3 style="font-family: 'STIX Two Text', serif;font-size: 26px;">Event Updates</h3>
 
 
   <div class="box">
@@ -18,8 +18,8 @@
       <div class="cards">
         <div class="card" >
 
-          <h4>{{data.Date |date}}</h4>
-          <p [innerHTML]="data.Desc"></p>
+          <h4 id="cardright">{{data.Date |date}}</h4>
+          <p id="cardright" [innerHTML]="data.Desc"></p>
           <img [src]="data.Img" >
         </div>
       </div>
@@ -27,7 +27,7 @@
 
     </div>
 
-    <div style="height:105px;">
+    <div style="height:86px;">
 
     </div>
 
