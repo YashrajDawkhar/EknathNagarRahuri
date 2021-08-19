@@ -10,18 +10,31 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TimeLineComponent } from './time-line/time-line.component';
 import { GameListComponent } from './game-list/game-list.component';
 
-import {TimelineModule} from 'primeng/timeline';
+import { TimelineModule } from 'primeng/timeline';
+import { GalleryComponent } from './gallery/gallery.component';
+import { GalleriaModule } from 'primeng/galleria';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { SkeletonModule } from 'primeng/skeleton';
+import { RippleModule } from 'primeng/ripple';
+
 @NgModule({
   declarations: [
     HomeComponent,
     TimeLineComponent,
-    GameListComponent
-    
-  
+    GameListComponent,
+    GalleryComponent,
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule, FormsModule, NgbModule,TimelineModule
-  ]
+    HomeRoutingModule,
+    FormsModule,
+    NgbModule,
+    TimelineModule,
+    GalleriaModule,
+    FormsModule,
+    ProgressSpinnerModule,
+    SkeletonModule,
+    RippleModule,
+  ],
 })
-export class HomeModule { }
+export class HomeModule {}

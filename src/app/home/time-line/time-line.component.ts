@@ -10,11 +10,12 @@ import { BackendService } from 'src/app/dashboard/backend.service';
 export class TimeLineComponent implements OnInit {
 
   arrayName: any = [];
-  
+  bootrapSpinner=true
 
   constructor(private service: BackendService) {
     this.service.getArtiName().subscribe((data) => {
       this.arrayName = data;
+      this.bootrapSpinner =false
     })
     
 

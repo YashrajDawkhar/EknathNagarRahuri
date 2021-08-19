@@ -1,14 +1,33 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
 </head>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <div>
                 <div class="card-body">
-                    <h6 class="card-title" id="artiTitle" style="text-align: center;">Today's Aarti NameList</h6>
+                    <h6 class="card-title" id="artiTitle" style="text-align: center;">Today Aarti NameList</h6>
                     <div id="content">
+                        
+                        <div class="bootrapSpinner" *ngIf="bootrapSpinner">
+                            <div class="spinner-grow text-success" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-danger" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-warning" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-info" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-light" role="status">
+                                <span class="sr-only">Loading...</span>
+                              </div>
+                        </div>
+                        
                         <ul class="timeline" *ngFor="let data of arrayName">
                             <li class="event" [attr.data-before]="data.Date | date:'dd/MM/yyyy'">
 
@@ -29,4 +48,3 @@
         </div>
     </div>
 </div>
-<!-- data-date="8:00pm - 8:30pm" -->

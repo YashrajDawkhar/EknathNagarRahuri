@@ -38,13 +38,15 @@
               "node_modules/primeicons/primeicons.css",
               "./node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "./node_modules/quill/dist/quill.core.css",
-              "./node_modules/quill/dist/quill.snow.css"
+              "./node_modules/quill/dist/quill.snow.css",
+              
+              "./node_modules/primeflex/primeflex.css",
+              "./node_modules/primeng/resources/primeng.css"
+
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
               "./node_modules/quill/dist/quill.js"
-              
-
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"

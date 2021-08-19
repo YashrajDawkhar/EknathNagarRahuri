@@ -21,8 +21,8 @@ p-card {
     user-select: none;
     text-align: center;
 }
-:host ::ng-deep .p-ripple.purple .p-ink {
-    background: #ffbee433;
+:host ::ng-deep .p-ripple .p-ink {
+    background: #fffbbe33;
 }
 :host ::ng-deep .p-card .p-card-body {
     padding:0;

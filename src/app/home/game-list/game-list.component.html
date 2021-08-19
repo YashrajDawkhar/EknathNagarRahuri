@@ -6,9 +6,10 @@
 
 
   <div class="box">
-
+    <p-progressSpinner *ngIf="progressSpinner" class="pSpinner"></p-progressSpinner>
     <div class="container" *ngFor="let data of events" loading="lazy">
 
+      
 
       <div class="lines">
         <div class="dot"></div>

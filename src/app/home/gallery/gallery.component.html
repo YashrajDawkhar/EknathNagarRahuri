@@ -1,0 +1,21 @@
+<div class="main"  >
+    <div class="mainGallery" pRipple >
+        <div class="line1">
+            Image Gallery
+        </div>
+        <div class="line2">
+            Check all new images here. <br> Click on the below image to view all. 
+        </div>
+        <img src="assets\HomePage\Gallery\display.png" alt="displayImg" (click)="displayBasic2 = true">
+    </div>
+</div>
+
+
+
+<p-galleria [value]="images" [(visible)]="displayBasic2" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '850px'}" [numVisible]="7"
+    [circular]="true" [fullScreen]="true" [showItemNavigators]="true" [showThumbnails]="false" [baseZIndex]="100000">
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.Img" style="width: 100%; display: block;"/>
+    </ng-template>
+</p-galleria>
+<!-- <button (click)="displayBasic2 = true" style="width:100px;height: 80px;"></button> -->
