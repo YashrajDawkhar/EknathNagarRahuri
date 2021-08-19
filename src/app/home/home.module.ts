@@ -16,6 +16,7 @@ import { GalleriaModule } from 'primeng/galleria';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { SkeletonModule } from 'primeng/skeleton';
 import { RippleModule } from 'primeng/ripple';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { RippleModule } from 'primeng/ripple';
     TimeLineComponent,
     GameListComponent,
     GalleryComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
