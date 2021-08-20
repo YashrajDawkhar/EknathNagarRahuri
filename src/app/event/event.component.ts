@@ -10,7 +10,7 @@ export class EventComponent implements OnInit {
   login:boolean=false
 
   constructor() {
-    if(localStorage.getItem("UserName") && localStorage.getItem('Password')){
+    if(sessionStorage.getItem("UserName") && sessionStorage.getItem('Password')){
       this.Notlogin=false
       this.login=true
     }

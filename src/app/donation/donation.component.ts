@@ -14,7 +14,7 @@ export class DonationComponent implements OnInit {
   donation:any=[]
   total:number=0;
   constructor(private service:BackendService) {
-    if(localStorage.getItem("UserName") && localStorage.getItem('Password')){
+    if(sessionStorage.getItem("UserName") && sessionStorage.getItem('Password')){
       this.Notlogin=false
       this.login=true
     }

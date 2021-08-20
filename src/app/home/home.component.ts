@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   login:boolean=false
 
   constructor(private service:BackendService) { 
-    if(localStorage.getItem("UserName") && localStorage.getItem('Password')){
+    if(sessionStorage.getItem("UserName") && sessionStorage.getItem('Password')){
       this.Notlogin=false
       this.login=true
     }

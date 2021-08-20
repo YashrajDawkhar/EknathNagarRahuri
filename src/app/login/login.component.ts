@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit {
     for (let i in this.loginList) {
       if (userName === this.loginList[i].name && pass === this.loginList[i].pass) {
 
-        localStorage.setItem("UserName", userName)
-        localStorage.setItem("Password", pass)
+        sessionStorage.setItem("UserName", userName)
+        sessionStorage.setItem("Password", pass)
         this.router.navigateByUrl('/dashboard')
       }
     }

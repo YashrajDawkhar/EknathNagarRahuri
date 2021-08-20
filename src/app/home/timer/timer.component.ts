@@ -34,7 +34,8 @@ export class TimerComponent implements OnInit {
     }
 
    },1000)
-    
+  
+   
 
   }
 

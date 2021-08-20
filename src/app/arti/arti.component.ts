@@ -15,7 +15,7 @@ export class ArtiComponent implements OnInit {
   constructor(private service:BackendService) { 
     this.artiPhoto =service.getArtiPhoto();
     
-    if(localStorage.getItem("UserName") && localStorage.getItem('Password')){
+    if(sessionStorage.getItem("UserName") && sessionStorage.getItem('Password')){
       this.Notlogin=false
       this.login=true
     }
