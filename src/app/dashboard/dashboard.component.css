@@ -1,13 +1,10 @@
 span {
   width: 250px;
   height: 110px;
-  padding: 20px;
+  padding: 30px 40px;
   box-shadow: 0px 0px 8px rgb(219 219 219 / 99%);
   background-color: rgb(214 214 214 / 13%);
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 14px 4px 22px 4px;
   border-radius: 16px;
   font-family: Nunito;
@@ -46,7 +43,15 @@ span:hover {
   padding: 15px 0px 20px 0px;
 }
 
-.bgBody {
-  background-color: #380217;
-  height:100vh;
+@media screen and (min-width: 426px) {
+  .bgBody {
+    background-color: #380217;
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 426px) {
+  .bgBody {
+    background-color: #380217;
+    height: fit-content;
+  }
 }
