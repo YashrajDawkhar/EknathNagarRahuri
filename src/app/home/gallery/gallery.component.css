@@ -40,3 +40,20 @@ img{
 :host ::ng-deep .p-ripple .p-ink {
     background: #aab8f749;
 }
+
+.hideDiv{
+    width:100%;
+    height:100%;
+    background-color: white;
+}
+
+@media screen and (min-width:768px) {
+    #mobile{
+        display:none;
+    }
+}
+@media screen and (max-width:768px) {
+    #dekstop{
+        display: none;
+    }
+}

@@ -1,4 +1,4 @@
-<div class="main"  >
+<div class="main" id="mobile" >
     <div class="mainGallery " pRipple >
         <div class="line1">
             Image Gallery
@@ -6,10 +6,26 @@
         <div class="line2">
             Check all new images here. <br> Click on the below image to view all. 
         </div>
+        <div class="hideDiv" (click)="displayBasic2 = true">
+
+        </div>
         <img src="assets\HomePage\Gallery\display.png" alt="displayImg" (click)="displayBasic2 = true">
     </div>
 </div>
+<div class="main" id="dekstop" >
+    <div class="mainGallery " (click)="displayBasic2 = true" >
+        <div class="line1">
+            Image Gallery
+        </div>
+        <div class="line2">
+            Check all new images here. <br> Click on the below image to view all. 
+        </div>
+        <div class="hideDiv" >
 
+        </div>
+        <img src="assets\HomePage\Gallery\display.png" alt="displayImg" >
+    </div>
+</div>
 
 
 <p-galleria [value]="images" [(visible)]="displayBasic2" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '850px'}" [numVisible]="7"
