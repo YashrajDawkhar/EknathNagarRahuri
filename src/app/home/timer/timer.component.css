@@ -1,0 +1,20 @@
+.center {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.spanInner {
+  padding: 0 20px;
+  font-size: 30px;
+}
+
+.border1{
+  border-right: 1px solid white;
+}
+
+p {
+  font-size: 10px;
+  text-transform: uppercase;
+}
