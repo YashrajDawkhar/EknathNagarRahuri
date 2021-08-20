@@ -11,15 +11,21 @@ export class GameListComponent implements OnInit {
   progressSpinner = true
   constructor(private service: BackendService) {
     service.getEventUpdate().subscribe((data: any) => {
-      this.events = data;
+      this.events = [...data].reverse();
       this.progressSpinner =false
     });
   
   }
 
+  
 
   ngOnInit(): void {
    
+    
+    
+    
+    
+
   }
   
 }
