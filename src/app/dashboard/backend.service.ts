@@ -68,5 +68,23 @@ export class BackendService {
     return this.http.patch(`${this.urlEventUpdate}/${id}`,data)
   }
 
+  urlgallery ="https://eknathnagar.herokuapp.com/gallery"
+
+  getgallery(){
+    return this.http.get(this.urlgallery);
+  }
+
+  postgallery(data:any){
+    
+    return this.http.post(this.urlgallery,data)
+  }
+
+  deletegallery(id:number){
+    return this.http.delete(`${this.urlgallery}/${id}`)
+  }
+
+  
+
+
 
 }
