@@ -15,6 +15,7 @@ import {InputNumberModule} from 'primeng/inputnumber';
 import { DonationEditComponent } from './donation-edit/donation-edit.component';
 import { EventUpdatesComponent } from './event-updates/event-updates.component';
 import {EditorModule} from 'primeng/editor';
+import { GalleryComponent } from './gallery/gallery.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -22,7 +23,8 @@ import {EditorModule} from 'primeng/editor';
     NavBarComponent,
     DonationComponent,
     DonationEditComponent,
-    EventUpdatesComponent
+    EventUpdatesComponent,
+    GalleryComponent
   ],
   imports: [
     CommonModule,

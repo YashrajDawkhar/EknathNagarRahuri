@@ -12,7 +12,7 @@ export class GalleryComponent implements OnInit {
 
 
   constructor(private service: BackendService) {
-    service.getEventUpdate().subscribe((data: any) => {
+    service.getgallery().subscribe((data: any) => {
       this.images = data;
     });
   

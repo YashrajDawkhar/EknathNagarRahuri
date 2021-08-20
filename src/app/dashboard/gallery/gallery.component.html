@@ -1,0 +1,79 @@
+<app-nav-bar></app-nav-bar>
+
+
+
+<div class="artiNameDashboard">
+
+  <div class="alert alert-success alert-dismissible fade show" role="alert" *ngIf="sucessMessage">
+    Image Have Been Added <strong>Sucessfully.</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="errorMessage">
+    Something Went <strong>Wrong !!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="delMessage">
+    Image Have Been <strong>Deleted !!</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+
+
+
+
+  <form autocomplete="off" [formGroup]="gallery" (ngSubmit)="artiDetails()">
+    <p id="titleArti">
+      Enter Gallery Details
+    </p>
+
+    <div class="p-float-label bottomMargin">
+      <input id="float-input" type="text" pInputText formControlName="Img">
+      <label for="float-input">Image Link</label>
+    </div>
+
+
+    <button pButton pRipple type="button" label="Submit" class="p-button-raised p-button-text" type="submit"
+      [disabled]="gallery.invalid"></button>
+
+    <button pButton pRipple type="button" label="reset" class="p-button-raised p-button-danger p-button-text resetbtn"
+      type="reset" ></button>
+
+  </form>
+
+
+
+
+</div>
+
+<div class="tableData">
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">No.</th>
+    <th scope="col">Image</th>
+    <th scope="col">Delete</th>
+    
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of galleryArray; index as i">
+    <th scope="row">{{ i + 1 }}</th>
+    <img [src]="data.Img" style="width:120px;height:120px;">
+    <td style="color:red;"   (click)="delData(data._id ,data)"><i class="bi bi-trash"></i></td>
+    
+  </tr>
+
+  </tbody>
+
+</table>
+
+</div>
