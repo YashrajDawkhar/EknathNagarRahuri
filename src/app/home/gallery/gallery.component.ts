@@ -13,7 +13,7 @@ export class GalleryComponent implements OnInit {
 
   constructor(private service: BackendService) {
     service.getgallery().subscribe((data: any) => {
-      this.images = data;
+      this.images = [...data].reverse();
     });
   
   }
