@@ -9,23 +9,20 @@ import { BackendService } from 'src/app/dashboard/backend.service';
 export class GameListComponent implements OnInit {
   events: any = [];
   progressSpinner = true
+
   constructor(private service: BackendService) {
     service.getEventUpdate().subscribe((data: any) => {
-      this.events = [...data].reverse();
+      // this.events = [...data].reverse();
+      let arrayData :[] = data;
+  
+      this.events = arrayData.slice().reverse();
       this.progressSpinner =false
     });
   
   }
 
-  
-
   ngOnInit(): void {
    
-    
-    
-    
-    
-
   }
   
 }
