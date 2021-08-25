@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1629487868561,
+  "timestamp": 1629933564039,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,21 +12,21 @@
       },
       "urls": [
         "/17.563c1acd1365c0df4f97.js",
-        "/296.c922c8f9c5223b311b85.js",
+        "/296.3f8f30e9ef0ac2024f3b.js",
         "/309.dada13c8c6559b17636f.js",
         "/340.1d0d4958fc7f10b927c8.js",
-        "/500.292a15c01b0590fc70f6.js",
-        "/529.3c8cc533edcca5b96eac.js",
-        "/969.8a86915bad963a1decad.js",
+        "/500.2d54cf5ded43afa0e3bd.js",
+        "/529.ba410f19aae99783eb98.js",
+        "/969.3212af72802a26403827.js",
         "/common.bf35e0e9587bffa4ccfd.js",
         "/favicon.ico",
         "/index.html",
         "/main.1681c9de8843c03c8a1d.js",
         "/manifest.webmanifest",
         "/polyfills.2eb7c13c83a2d7d2ffee.js",
-        "/runtime.d3d424f2f36bb1c7df3e.js",
+        "/runtime.c80c0f309653382b6af3.js",
         "/scripts.1f44456713f286bda350.js",
-        "/styles.2f523137a4a40bc3588f.css"
+        "/styles.863a44e7831a5f451857.css"
       ],
       "patterns": []
     },
@@ -59,6 +59,10 @@
         "/assets/HomePage/Carosel/ganpati2.webp",
         "/assets/HomePage/Gallery/display.png",
         "/assets/HomePage/NameCard/bg.png",
+        "/assets/Svg/Running_Flatline.svg",
+        "/assets/Svg/Skipping rope-bro.svg",
+        "/assets/Svg/Winners-2_girl_boy.svg",
+        "/assets/Svg/Winners_3_Person.svg",
         "/assets/icons/maskable_icon_x128.png",
         "/assets/icons/maskable_icon_x192.png",
         "/assets/icons/maskable_icon_x384.png",
@@ -81,12 +85,12 @@
   "dataGroups": [],
   "hashTable": {
     "/17.563c1acd1365c0df4f97.js": "196f44de3d85d7ee59449a31802629b2d4f504e9",
-    "/296.c922c8f9c5223b311b85.js": "0e43540dbbc31ebc0ae44d5eade82fd756de03be",
+    "/296.3f8f30e9ef0ac2024f3b.js": "0d4c5fccdfca5c8fb019eba7f4518f7e6f087a91",
     "/309.dada13c8c6559b17636f.js": "746d1603f6933dada9c4d6685e1635e8fcbafd11",
     "/340.1d0d4958fc7f10b927c8.js": "de65a852179d59c618b09df70649c5ee9edcad7d",
-    "/500.292a15c01b0590fc70f6.js": "1afbc0d7e3834be555da00fb228dc91f58433da8",
-    "/529.3c8cc533edcca5b96eac.js": "a777de7f3feee1004192c73af317bdf369e411c1",
-    "/969.8a86915bad963a1decad.js": "21f26bd80ddf251ed68f34c78b2c0637d45912c5",
+    "/500.2d54cf5ded43afa0e3bd.js": "cd8d6994cab7341fcbcfdfef28aa1adaa8f7b6e4",
+    "/529.ba410f19aae99783eb98.js": "ff5cae53dd1c8abf41709766210c4172f95fe6cb",
+    "/969.3212af72802a26403827.js": "bff28c9c9fa6f871c38545774a48d71868ec0bec",
     "/assets/2020_Arti/1.webp": "eed5ffb4a11cab8c34fe90e95ebdbeb13c7a6d43",
     "/assets/2020_Arti/10.webp": "5136106646239dbc428b1c27f6850d7471b0efa2",
     "/assets/2020_Arti/11.webp": "3adc407811d1db24f7dc2a73e0cb01c32a245d63",
@@ -108,6 +112,10 @@
     "/assets/HomePage/Carosel/ganpati2.webp": "ea3f9f7439230273e5e11592ef776de7613ab0f2",
     "/assets/HomePage/Gallery/display.png": "c7b94c0d7d6ed30e5a9f73f15e092a3e61e526fd",
     "/assets/HomePage/NameCard/bg.png": "4ea784f66d12a0c21c4179175823e0ef2174f4c4",
+    "/assets/Svg/Running_Flatline.svg": "3f50a8a7ce84df1b7465a06efbcdbec8d61ca458",
+    "/assets/Svg/Skipping rope-bro.svg": "52c7cb38ec3847de1256f3e6fdc9d30f1e13e6fe",
+    "/assets/Svg/Winners-2_girl_boy.svg": "826f87b041aa056364a6effeafaf2078fcedbec6",
+    "/assets/Svg/Winners_3_Person.svg": "3afc94515ef586c5ea23709ed08bc82a132634a9",
     "/assets/icons/maskable_icon_x128.png": "107a3f3502b5c9d1385b7063779f4257ccc44eb4",
     "/assets/icons/maskable_icon_x192.png": "947617a397748008fcf870e7b5a91860269840e8",
     "/assets/icons/maskable_icon_x384.png": "0cf162896a9a355791665b0124d5053f62bc21fe",
@@ -121,7 +129,7 @@
     "/common.bf35e0e9587bffa4ccfd.js": "83383d9904df2840bd35481a54ebababdfcc6909",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/hue.f8505bd4d6f3e3aa435b.png": "f81ae627637a684614aa726e206c73ce099a01fd",
-    "/index.html": "782e1ea1df08086f31efaa3e2ec484d3baf562b7",
+    "/index.html": "60b8a16342ee5c31a8499806624d875b6d877bf0",
     "/main.1681c9de8843c03c8a1d.js": "fed2a0321cd1af2ab9461768ce747f5ff7e48c17",
     "/manifest.webmanifest": "997ec2df74e6575206ac5556f64a654eee6e3db3",
     "/polyfills.2eb7c13c83a2d7d2ffee.js": "9bb12467473fb907825edb5e092d57d2912b6e9d",
@@ -129,9 +137,9 @@
     "/primeicons.c55d94a248721abbd220.svg": "4a2c5258656a8b900ddeabf5ac62aace724f5a0d",
     "/primeicons.dfbfef2de4bfb34e9722.eot": "6441e65a2458d0c813cd2bf6e8648c1f54327bdb",
     "/primeicons.e61f3495a7ecd3d571a4.woff": "d65c561bf2d7b6707c3912d8987273a9c715b7f2",
-    "/runtime.d3d424f2f36bb1c7df3e.js": "6dd01d5773ed1c2545cc13a527096ce0a8f753cb",
+    "/runtime.c80c0f309653382b6af3.js": "5a0bd8e40d2569990a202a4c087ddd0e04133819",
     "/scripts.1f44456713f286bda350.js": "8fa2ba75a32aeb2eda9ccf2ae775e9041a691a71",
-    "/styles.2f523137a4a40bc3588f.css": "45b893da901a6fbd467a3863e5889c1a859498fa"
+    "/styles.863a44e7831a5f451857.css": "3cededadc92f5fe18e8da7b403a4a4bcd2789ee4"
   },
   "navigationUrls": [
     {
