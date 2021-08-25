@@ -71,5 +71,6 @@ nav span.active {
   }
   body::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background-color: rgb(136, 136, 136);
+    background-color: rgb(212, 212, 212);
   }
+  
