@@ -1,0 +1,73 @@
+img {
+  width: 183px;
+  display: flex;
+  border-radius: 21px;
+}
+
+h1{
+  font-family: "Signika", sans-serif;
+  color: #410055;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+@media screen and (min-width:525px) {
+    #micky {
+        position: relative;
+        left: -75px;
+      }
+    
+      #childLabour {
+        position: relative;
+        right: -81px;
+        top: -130px;
+      }
+      img {
+        width:251px;
+      }
+}
+@media screen and (max-width:525px) {
+  #micky {
+    position: relative;
+    left: -75px;
+  }
+
+  #childLabour {
+    position: relative;
+    right: -81px;
+    top: -130px;
+  }
+  img {
+    width:251px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #micky {
+    position: relative;
+    left: -69px;
+    top: 18px;
+  }
+
+  #childLabour {
+    position: relative;
+    right: -71px;
+    top: -98px;
+  }
+  img {
+    width: 197px;
+  }
+}
+@media screen and (max-width: 321px) {
+  #micky {
+    position: relative;
+    left: -59px;
+    top: 16px;
+  }
+
+  #childLabour {
+    position: relative;
+    right: -60px;
+    top: -91px;
+  }
+}

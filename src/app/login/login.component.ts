@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   loginList = [{ name: "Yashraj Dawkhar", pass: "Yashraj@19" },
-   { name: "Tejas Dawkhar", pass: "Tejas@67" },{name:"Ganpati",pass:"Ganpati@12"},{name:"Piyush Marbhal",pass:"Piyush@55"}]
+   { name: "Tejas Dawkhar", pass: "Tejas@67" },{name:"Ganpati",pass:"Ganpati@55"},{name:"Piyush Marbhal",pass:"Piyush@55"}]
 
   constructor(private router: Router) { }
 
