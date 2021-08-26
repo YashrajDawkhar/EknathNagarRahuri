@@ -41,8 +41,9 @@
               "./node_modules/quill/dist/quill.snow.css",
               
               "./node_modules/primeflex/primeflex.css",
-              "./node_modules/primeng/resources/primeng.css"
+              "./node_modules/primeng/resources/primeng.css",
 
+              "./node_modules/animate.css"
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
