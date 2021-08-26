@@ -8,6 +8,12 @@ import { HttpClientModule } from "@angular/common/http";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { HomeModule } from './home/home.module';
+import {ArtiModule} from './arti/arti.module';
+import {DonationModule} from './donation/donation.module';
+import {EventModule} from './event/event.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -18,6 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NgbModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    HomeModule,ArtiModule,DonationModule,EventModule,
+    
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
