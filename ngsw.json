@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1630093766716,
+  "timestamp": 1630094990404,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -16,12 +16,12 @@
         "/common.5d2936253070dca77864.js",
         "/favicon.ico",
         "/index.html",
-        "/main.0e1adcd73080ef1caaa3.js",
+        "/main.69bcca80d388ce16104c.js",
         "/manifest.webmanifest",
         "/polyfills.28bc4ad2436996241fff.js",
-        "/runtime.7514c22bc9b8152f77ed.js",
+        "/runtime.8510c60795f4579d9f97.js",
         "/scripts.1f44456713f286bda350.js",
-        "/styles.863a44e7831a5f451857.css"
+        "/styles.0b4e59db657a563c7067.css"
       ],
       "patterns": []
     },
@@ -60,7 +60,6 @@
         "/assets/Svg/Skipping rope-bro.svg",
         "/assets/Svg/Winners-2_girl_boy.svg",
         "/assets/Svg/Winners_3_Person.svg",
-        "/assets/audio.mp3",
         "/assets/icons/maskable_icon_x128.png",
         "/assets/icons/maskable_icon_x192.png",
         "/assets/icons/maskable_icon_x384.png",
@@ -111,7 +110,6 @@
     "/assets/Svg/Skipping rope-bro.svg": "714a2f94b86d01a727fef3496ec18caec2e304f3",
     "/assets/Svg/Winners-2_girl_boy.svg": "826f87b041aa056364a6effeafaf2078fcedbec6",
     "/assets/Svg/Winners_3_Person.svg": "3afc94515ef586c5ea23709ed08bc82a132634a9",
-    "/assets/audio.mp3": "87d39331678dafed33145a48bc15e13e97d5e026",
     "/assets/icons/maskable_icon_x128.png": "107a3f3502b5c9d1385b7063779f4257ccc44eb4",
     "/assets/icons/maskable_icon_x192.png": "947617a397748008fcf870e7b5a91860269840e8",
     "/assets/icons/maskable_icon_x384.png": "0cf162896a9a355791665b0124d5053f62bc21fe",
@@ -125,17 +123,17 @@
     "/common.5d2936253070dca77864.js": "a73d34c9bbd7cde6ee03974ed05ee3ab11453eca",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/hue.f8505bd4d6f3e3aa435b.png": "f81ae627637a684614aa726e206c73ce099a01fd",
-    "/index.html": "c4a0a953cbffffdf128e24aa8ba43c8a40eef212",
-    "/main.0e1adcd73080ef1caaa3.js": "bd6e49ef89255e5b19b8cd2c91ca67033cbaa087",
+    "/index.html": "77a5a3c566446ae227e8698969f988749ff962e0",
+    "/main.69bcca80d388ce16104c.js": "41f46e38852a2954e5a365442945e4be3ea96618",
     "/manifest.webmanifest": "997ec2df74e6575206ac5556f64a654eee6e3db3",
     "/polyfills.28bc4ad2436996241fff.js": "db9fadff6a5f6ab3f5bd9ffcf0a28adb742eb37e",
     "/primeicons.3a0d4a58da62cf7c55bb.ttf": "13889b5e1915891dd548d6b71c1cccddb469e13d",
     "/primeicons.c55d94a248721abbd220.svg": "4a2c5258656a8b900ddeabf5ac62aace724f5a0d",
     "/primeicons.dfbfef2de4bfb34e9722.eot": "6441e65a2458d0c813cd2bf6e8648c1f54327bdb",
     "/primeicons.e61f3495a7ecd3d571a4.woff": "d65c561bf2d7b6707c3912d8987273a9c715b7f2",
-    "/runtime.7514c22bc9b8152f77ed.js": "4780f58cf2a5b9a7350c5661cc92cbe3b82dcf69",
+    "/runtime.8510c60795f4579d9f97.js": "3fa92858eb2fd486b93f52ad92612144f9a7e3e1",
     "/scripts.1f44456713f286bda350.js": "33a2b56bd68fc7106234a489bf20584fc30a396c",
-    "/styles.863a44e7831a5f451857.css": "3cededadc92f5fe18e8da7b403a4a4bcd2789ee4"
+    "/styles.0b4e59db657a563c7067.css": "d6022b69d2d1d5f48279d857a23e628adb354e52"
   },
   "navigationUrls": [
     {
